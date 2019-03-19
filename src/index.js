@@ -4,11 +4,13 @@ import './index.css';
 import App from './containers/App/App';
 
 import { Provider } from 'react-redux'
-import store from './redux/store';
+import configStore from './redux/store';
+
+const store = configStore()
 
 const MyApp = () => (
     <Provider store={store}>
-        <App/>
+        <App />
     </Provider>
 )
 
